@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}		<!-- added this line for use static files -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  
+</head>
+
+<body>
+    <h3>Submitted Info</h3>
+    <p>Name: {{name}}</p>
+    <p>Location: {{location}}</p>
+    <p>Favorite Language: {{language}}</p>
+    <p>Comment: {{comment}}</p>
+
+    <p><a href="/">Go Back</a></p>
+
+
+    <!-- <script src="{% static 'js/script.js' %}"></script>-->
+</body>
+
+</html>

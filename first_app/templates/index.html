@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     {% load static %}		<!-- added this line for use static files -->
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+</head>
+<body>
+     <div class="container">
+        <h1>Index Page</h1>
+        <h3>Create a User</h3>
+        <form action="/result" method="POST">
+            {% csrf_token %}  <!-- important !!! -->
+            <div>
+                <label for="name">Name</label>
+                <input class="name" type="text" name="name">
+            </div>
+            <div>
+                <label for="location">Location</label>
+                <select name="location">
+                    <option value="San Jose">San Jose</option>
+                    <option value="NY">NY</option>
+                    <option value="LA">LA</option>
+                </select>
+            </div>
+            <div>
+                <label for="language">Favorite Language</label>
+                <select name="language">
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="JS">JS</option>
+                </select>
+            </div>
+            <div>
+                <label for="comment">Comment</label>
+                <textarea name="comment" rows="5"></textarea>
+            </div>
+            <div>
+                <input class="button" type="submit" value="Button">
+            </div>
+        </form>
+     </div>
+
+
+
+   <!-- <script src="{% static 'js/script.js' %}"></script>-->
+</body>
+</html>

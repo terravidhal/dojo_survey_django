@@ -1,0 +1,19 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    border: 2px solid rgb(39, 70, 39);
+    padding: 20px;
+}
+.hello{
+    margin: 30px auto;
+    color: rgb(39, 70, 39);
+    width: 300px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
